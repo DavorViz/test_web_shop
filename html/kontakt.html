@@ -24,7 +24,7 @@
                 } // f-ja provjerava da li je došao odgovor od strane servera (4)
                 
             }
-            httpRequest.open("GET", "../php/obrada.php?email="+email+"&poruka="+poruka); // otvaramo konekciju
+            httpRequest.open("GET", "../php/obrada.php?email="+email+"&poruka="+poruka); // otvaramo konekciju sa serverom
             httpRequest.send(); // šaljemo podatke, čekamo odgovor od servera
         }
     </script>
