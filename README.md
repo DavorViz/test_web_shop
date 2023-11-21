@@ -2,4 +2,4 @@
 
 Repozitorij za potrebe kolegija Programiranje za internet.
 
-Dodajemo neki novi text.
+Dodajemo neki novi text. I opet!
