@@ -22,6 +22,20 @@
     <div class="w3-container">
     <h1>Web shop - mobiteli</h1>    
     <p></p>
+
+    <?php
+
+    $server = "localhost";
+    $database = "mobiteli";
+    $username = "root";
+    $password = "";
+
+    $conn = mysqli_connect($server, $username, $password, $database);
+    $query = "SELECT * FROM mobiteli";
+    $res = mysqli_query($conn, $query);
+
+    ?>
+
     <div>Popis svih mobitela:
         <table class="w3-table-all">
             <tr class="w3-red">
@@ -32,6 +46,19 @@
                 <th>Slika</th>
                 <th>Cijena</th>
             </tr>
+            <?php
+            while($row = mysqli_fetch_array($res)){
+                echo "<tr>";
+                echo "<td>".$row['ID']."</td>";
+                echo "<td>".$row['NAZIV']."</td>";
+                echo "<td>".$row['PROIZVODJAC']."</td>";
+                echo "<td>".$row['OPIS']."</td>";
+                echo "<td><img src='".$row['SLIKA']."'width='100px' alt='".$row['NAZIV']."'</td>";
+                echo "<td>".$row['CIJENA']."</td>";
+                echo "</tr>";
+            }
+            mysqli_close($conn);
+            ?>
             <tr>
                 <td>1.</td>
                 <td>Galaxy Z Flip5</td>
@@ -121,7 +148,7 @@
                     OS: MIUI 14, based on Android 12  <br>    
                     Ekran: 6.67“ FHD+ AMOLED Display Corning® Gorilla® Glass 3 <br>
                     <a href="https://mi.hr/redmi-note-12-5g" target="_blank">Više o uređaju...</a> </td>
-                <td><img src="https://mi.hr/images/thumbs/0007278_redmi-note-12-5g_750.jpeg" width="100px" alt=""></td>
+                <td><img src="https://i02.appmifile.com/mi-com-product/fly-birds/redmi-note-12/m/32abaf4b7fb43facf99de438c694d59e.jpggit add all" width="100px" alt=""></td>
                 <td>287.63</td>              
             </tr>
             <tr>
