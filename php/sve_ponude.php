@@ -148,7 +148,11 @@
                     OS: MIUI 14, based on Android 12  <br>    
                     Ekran: 6.67“ FHD+ AMOLED Display Corning® Gorilla® Glass 3 <br>
                     <a href="https://mi.hr/redmi-note-12-5g" target="_blank">Više o uređaju...</a> </td>
+<<<<<<< HEAD
                 <td><img src="https://mi.hr/images/thumbs/0007278_redmi-note-12-5g_750.jpeg" width="100px" alt=""></td>
+=======
+                <td><img src="https://i02.appmifile.com/mi-com-product/fly-birds/redmi-note-12/m/32abaf4b7fb43facf99de438c694d59e.jpggit add all" width="100px" alt=""></td>
+>>>>>>> 30506fbfc0ea67d942170b9311e999991ba0d4e5
                 <td>287.63</td>              
             </tr>
             <tr>
